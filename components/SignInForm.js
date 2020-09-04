@@ -42,6 +42,7 @@ const useForm = (callback, validate) => {
     errors,
   }
 };
+
 const SignInForm = () => {
   const {
     values,
@@ -49,6 +50,11 @@ const SignInForm = () => {
     handleChange,
     handleSubmit,
   } = useForm(login, validate);
+
+  const [passwordShown, setPasswordShown] = useState(false);
+  const togglePasswordVisiblity = () => {
+    setPasswordShown(passwordShown ? false : true);
+  };
 
   function login() {
     console.log('No errors, submit callback called!');
@@ -121,16 +127,17 @@ const SignInForm = () => {
         </div>
         <div className="AuthenticationForm">
           <form onSubmit={handleSubmit} noValidate>
-            <div className="FormControl">
+            <div className="FormControlEmail">
               <input autoComplete="off" type="email" name="email" placeholder="Email address" onChange={handleChange} value={values.email || ''} required />
               {errors.email}
             </div>
 
 
-            <div className="FormControl">
-              <input type="password" name="password" placeholder="Password" onChange={handleChange} value={values.password || ''} required />
-              {errors.password}
+            <div className="FormControlPass">
+              <input type={passwordShown ? "text" : "password"} name="password" placeholder="Password" onChange={handleChange} value={values.password || ''} required />
+              <span onClick={togglePasswordVisiblity}>Show</span>
             </div>
+            {errors.password}
 
             <div className="Password">
               <input type="checkbox" value="IsRememberMe" id="rememberMe" />
