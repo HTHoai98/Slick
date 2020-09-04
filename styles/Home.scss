@@ -231,6 +231,8 @@
     text-align: center;
     button {
         outline: none;
+        background-color: red;
+        color: white;
         border-radius: 26px;
         text-transform: uppercase;
         padding: 10px 60px;
@@ -238,6 +240,12 @@
         font-size: 16px;
         border: 1px solid transparent;
         font-weight: 700;
+
+        &:hover {
+            background-color: white;
+            border: 1px solid red;
+            color: red;
+        }
     }
 }
 

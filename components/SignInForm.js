@@ -162,7 +162,7 @@ const SignInForm = () => {
             </div>
 
             <div className="LogInButton">
-              <button type="submit">Login</button>
+              <button type="submit">Log in</button>
             </div>
           </form>
         </div>
