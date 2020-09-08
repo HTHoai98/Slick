@@ -171,7 +171,7 @@ const SignInForm = () => {
 
         <div className="CreateAccount">
           <div className="CustomText">
-            Don`&apos;`t have an account?
+            Don&apos;t have an account?
             <a href="/">Create one</a>
           </div>
         </div>

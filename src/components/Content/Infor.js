@@ -12,7 +12,7 @@ function Infor() {
                     </div>
                     <div className="User__Infor">
                         <span>Hello,</span>
-                        <p>Attendee`&apos;`s Name.<br />
+                        <p>Attendee&apos;s Name.<br />
                 Middle <br />
                 Last
               </p>
@@ -21,7 +21,7 @@ function Infor() {
                 </User>
                 <Info>
                     <p className="Title">Welcome to ITAP Connect 2020.</p>
-                    <p className="subTitle">Let`&apos;`s Explore what I4.0 can do for you and your business.</p>
+                    <p className="subTitle">Let&apos;s Explore what I4.0 can do for you and your business.</p>
                     <div className="Note">
                         <i className="fa fa-exclamation-circle" aria-hidden="false"><span>Your Personal Quick Tolls To Help You Achieve Your Goals Efficiently</span></i>
                     </div>
