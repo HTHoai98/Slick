@@ -1,6 +1,5 @@
 
 import styled from "@emotion/styled";
-import Slider from "react-slick";
 import Slick from "../components/Slick/Slick"
 import Infor from "../components/Content/Infor"
 import Login from "../components/Login/Login"

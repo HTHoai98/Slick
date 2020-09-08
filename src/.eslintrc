@@ -1,0 +1,23 @@
+{
+  "env": { "es6": true, "browser": true, "node": true },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended"
+  ],
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "no-console": "off",
+    "react/display-name": "off",
+    "react/jsx-no-undef": "off"
+  },
+  "globals": {
+    "React": "writable",
+    "localStorage": true,
+    "fetch": true,
+    "Promise": true,
+    "window": true,
+    "document": true
+  },
+  "parser": "babel-eslint"
+}

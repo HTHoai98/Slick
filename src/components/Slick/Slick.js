@@ -21,12 +21,12 @@ function Slick() {
                     border: "1px gray ridge",
                 }}
             >
-                {/* {i + 1} display number */}
+                {i + 1}
             </div>
         )
     };
 
-    const [array, setArray] = useState([
+    const [array] = useState([
         {
             name: "GATEWAY TO I4.0 INTERACTIVE EXPERIENCE",
             title: "Feature Event/Exhibitor Title",
@@ -60,8 +60,8 @@ function Slick() {
                         {
                             array.map((value, index) => {
                                 return(
-                                    <div>
-                                        <SlickData valueProp={value} key={index}/>
+                                    <div key={index}>
+                                        <SlickData valueProp={value}/>
                                     </div>
                                 )
                             })

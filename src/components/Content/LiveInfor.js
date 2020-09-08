@@ -2,6 +2,7 @@ import React from 'react';
 import styled from "@emotion/styled";
 import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
+import PropTypes from "prop-types";
 
 function LiveInfor(props) {
     const useStyles = makeStyles((theme) => ({
@@ -18,7 +19,7 @@ function LiveInfor(props) {
     }));
     
     const classes = useStyles();
-    const { valueProp } = props
+    const { valueProp } = props;
 
     return (
 
@@ -54,6 +55,10 @@ function LiveInfor(props) {
 }
 
 export default LiveInfor;
+
+LiveInfor.propTypes = {
+    valueProp: PropTypes.any,
+}
 
 const ListLive__Name = styled.div`
 `;

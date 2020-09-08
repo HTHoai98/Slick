@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "@emotion/styled";
+import PropTypes from "prop-types";
 
 function SlickData(props) {
 
@@ -16,6 +17,10 @@ function SlickData(props) {
 }
 
 export default SlickData;
+
+SlickData.propTypes = {
+    valueProp: PropTypes.any,
+}
 
 const ButtonExplore = styled.a`
   border-radius: 2px;

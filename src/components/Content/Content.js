@@ -6,7 +6,7 @@ import LiveInfor from "components/Content/LiveInfor";
 
 function Content() {
 
-    const [Attendess, setAttendees] = useState([
+    const [Attendess] = useState([
         {
             img: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcREGifsaPHo2B0W8oaN7neAMYZfL2UXEza4dw&usqp=CAU",
             name: "Stephanie Steel",
@@ -39,7 +39,7 @@ function Content() {
         },
     ])
 
-    const [LiveInformation, setLiveInfor] = useState([
+    const [LiveInformation] = useState([
         {
             title: "Live conference Title/Lable Dbl Line",
             name: "By: Speaker Name | Corporation Name",
@@ -94,17 +94,19 @@ function Content() {
                 <ListLive>
                     <ListLive__Title>
                         <p>Coming up on - DAY 2</p>
-                        <i class="fa fa-exclamation-circle fa-2x" aria-hidden="true"></i>
+                        <i className="fa fa-exclamation-circle fa-2x" aria-hidden="true"></i>
                     </ListLive__Title>
                     <ListLive__Infor>
+                        
                         {
                             LiveInformation.map((value, index) => {
                                 return (
-                                    <div>
-                                        <LiveInfor valueProp={value} key={index} />
+                                    <div key={index}>
+                                        <LiveInfor valueProp={value}  />
                                     </div>
                                 )
                             })
+
                         }
                     </ListLive__Infor>
                 </ListLive>
@@ -112,14 +114,14 @@ function Content() {
                 <ListAttendees>
                     <ListAttendees__Title>
                         <p>THESE ATTENDEES RSVPed</p>
-                        <i class="fa fa-exclamation-circle fa-2x" aria-hidden="true"></i>
+                        <i className="fa fa-exclamation-circle fa-2x" aria-hidden="true"></i>
                     </ListAttendees__Title>
                     <ListAttendees__List>
                         {
                             Attendess.map((value, index) => {
                                 return (
-                                    <div>
-                                        <AttendeesInfor valueProp={value} key={index} />
+                                    <div key={index}>
+                                        <AttendeesInfor valueProp={value} />
                                     </div>
                                 )
                             })
@@ -132,6 +134,8 @@ function Content() {
 }
 
 export default Content;
+
+
 
 const Wrapper = styled.div`
     margin-top: 30px;

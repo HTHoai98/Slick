@@ -12,7 +12,7 @@ function Infor() {
                     </div>
                     <div className="User__Infor">
                         <span>Hello,</span>
-                        <p>Attendee's Name.<br />
+                        <p>Attendee`&apos;`s Name.<br />
                 Middle <br />
                 Last
               </p>
@@ -21,29 +21,29 @@ function Infor() {
                 </User>
                 <Info>
                     <p className="Title">Welcome to ITAP Connect 2020.</p>
-                    <p className="subTitle">Let's Explore what I4.0 can do for you and your business.</p>
-                    <div class="Note">
+                    <p className="subTitle">Let`&apos;`s Explore what I4.0 can do for you and your business.</p>
+                    <div className="Note">
                         <i className="fa fa-exclamation-circle" aria-hidden="false"><span>Your Personal Quick Tolls To Help You Achieve Your Goals Efficiently</span></i>
                     </div>
                     <ContainIcon>
                         <Icon>
-                            <i class="fa fa-briefcase fa-2x" aria-hidden="true"></i>
+                            <i className="fa fa-briefcase fa-2x" aria-hidden="true"></i>
                             <span>BREIFCASE</span>
                         </Icon>
                         <Icon>
-                            <i class="fa fa-calendar-minus-o fa-2x" aria-hidden="true"></i>
+                            <i className="fa fa-calendar-minus-o fa-2x" aria-hidden="true"></i>
                             <span>AGENDA</span>
                         </Icon>
                         <Icon>
-                            <i class="fa fa-question-circle fa-2x" aria-hidden="true"></i>
+                            <i className="fa fa-question-circle fa-2x" aria-hidden="true"></i>
                             <span>HELP GUIDE</span>
                         </Icon>
                         <Icon>
-                            <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+                            <i className="fa fa-envelope fa-2x" aria-hidden="true"></i>
                             <span>MESSAGES</span>
                         </Icon>
                         <Icon>
-                            <i class="fa fa-bell fa-2x" aria-hidden="true"></i>
+                            <i className="fa fa-bell fa-2x" aria-hidden="true"></i>
                             <span>NOTIFICATIONS</span>
                         </Icon>
                     </ContainIcon>

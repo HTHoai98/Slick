@@ -12,7 +12,7 @@ function InputCustom({
     name = "input",
     rules = [],
 }) {
-    const [isActive, setIsActive] = React.useState(false);
+    const [isActive] = React.useState(false);
     const inputEl = React.useRef(null); // (useRef) returns a mutable ref object
 
     //to input

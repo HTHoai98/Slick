@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styled from "@emotion/styled";
+import PropTypes from "prop-types";
 
 function AttendeesInfor(props) {
 
@@ -25,12 +26,16 @@ function AttendeesInfor(props) {
                 <p className="Attendees__Infor--name">{valueProp.name}</p>
                 <p>{valueProp.Infor}</p>
             </div>
-            <i class="fa fa-user fa-3x" aria-hidden="true" style={{ backgroundColor: color }} onClick={handleChangeColor}></i>        
+            <i className="fa fa-user fa-3x" aria-hidden="true" style={{ backgroundColor: color }} onClick={handleChangeColor}></i>        
         </Attendees>
     );
 }
 
 export default AttendeesInfor;
+
+AttendeesInfor.propTypes = {
+    valueProp: PropTypes.any,
+}
 
 const Attendees = styled.div`
     background-color: gray;
